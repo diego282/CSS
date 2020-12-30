@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox #01</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        div {
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+            margin: 5px;
+        }
+        
+        .big {
+            font-size: 1.5em;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            /* muda a orientação para coluna*/
+            flex-direction: column-reverse;
+            /* reverte as order dos elementos*/
+            flex-direction: row-reverse;
+            /* coloca como ser fosse float a direita*/
+            flex-direction: row;
+            /* muda a orientação para linha*/
+            width: 50%;
+            flex-wrap: wrap;
+            /* quebra a linha ser a largura especificada foi aringida e ha elementos ainda*/
+            flex-wrap: wrap-reverse;
+            /* trocar as linhas de posições*/
+            flex-flow: row wrap;
+            height: 200px;
+            flex-flow: column-reverse wrap;
+            /* inverte os elementos, coloca em coluna e quebra linha ser precisar*/
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            /*coloca os elementos no começo*/
+            justify-content: flex-end;
+            /*coloca os elementos no fim*/
+            justify-content: center;
+            /*centraliza os elementos*/
+            justify-content: space-around;
+            /*da um espaço entre os elementos e as pontas*/
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            /*da um espaço entre os elementos */
+            /* Cross Axis */
+            height: 400px;
+            align-items: stretch;
+            align-items: baseline;
+            /*alinha de acordo com a fonte */
+            align-items: flex-start;
+            /*alinha encima da tela */
+            align-items: flex-end;
+            /*alinha no final da tela */
+            align-items: center;
+            /* centraliza */
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container tag nolabel">
+        <div class="tag nolabel">1</div>
+        <div class="tag nolabel">2</div>
+        <div class="tag nolabel big">3</div>
+        <div class="tag nolabel">4</div>
+        <div class="tag nolabel">5</div>
+        <div class="tag nolabel">6</div>
+        <div class="tag nolabel">7</div>
+        <div class="tag nolabel">8</div>
+        <div class="tag nolabel">9</div>
+        <div class="tag nolabel">10</div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

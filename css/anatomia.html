@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .seletor {
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            /* multiplos valores */
+            border: dashed 5px navy;
+            /* Coloca uma borda ser for solid completa, ser for dashed tracejada */
+            /* shorthand property */
+            font-family: Helvetica, sans-serif;
+            /* fonte, nesse caso ser não encontra o primeira fonte, usa a segunda e assim por diante*/
+            /* funções */
+            width: calc(100% - 40px);
+            background-color: rgb(34, 153, 189);
+        }
+        /* Usando uma pseudo-classe */
+        
+        .seletor:hover {
+            /* :houver e uma pseudo-classe, que quando usanda ao passa por cima do componete o css dados são executados */
+            background-color: orangered;
+        }
+        /* Usando um pseudo-elemento */
+        
+        .seletor::first-letter {
+            font-size: 60px;
+            font-weight: bold;
+        }
+        /* padrão de nomenclatura? */
+        /* dash-case ou camelCase? */
+    </style>
+</head>
+
+<body>
+    <div class="seletor">Conteúdo</div>
+</body>
+
+</html>
